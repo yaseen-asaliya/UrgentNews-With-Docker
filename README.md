@@ -133,6 +133,23 @@ services:
       - HOST_IP=<host-ip>
     container_name: news-frontend-container
 ```
+#### Setup environment files `.env_db` & `.env_backend`
+* Example of `env_db`
+```
+MYSQL_DATABASE=urgentNews
+MYSQL_USER=yaseen
+MYSQL_PASSWORD=12345
+MYSQL_ROOT_PASSWORD=root
+```
+* Example of `env_backend`
+```
+DB_HOST=<host-ip>
+DB_USER=yaseen
+DB_PASS=12345
+DB_NAME=urgentNews
+DB_PORT=3306
+```
+
 * Run docker compose file 
 ```
 $ sudo docker-compose up -d
