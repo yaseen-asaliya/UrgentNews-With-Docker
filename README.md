@@ -1,4 +1,4 @@
-# UrgentNews-Docker-Assignment_4_Cloud_Computing
+# UrgentNews-With-Docker
 > Overall, all the base images are not from `ubuntu` directly, cause ubuntu is very big base image so i used light weight images to make images creation in best practice.
 
 ### Createing and Building images
@@ -158,6 +158,8 @@ $ sudo docker-compose up -d
 ```
 http://localhost
 ```
+* To verify the installation, you should see the same this results
+![image](https://github.com/yaseen-asaliya/UrgentNews-Docker-Assignment_4_Cloud_Computing/assets/59315877/2e93c125-1de5-4992-a2da-fceb5b1d5aad)
 
 
 
