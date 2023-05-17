@@ -1,6 +1,6 @@
 # UrgentNews-Docker-Assignment_4_Cloud_Computing
 > Overall, all the base images are not from `ubuntu` directly, cause ubuntu is very big base image so i used light weight images to make images creation in best practice.
-
+## configur images
 ### Createing and Building images
 
 * The following docker file `Dockerfile.urgentNews.database` based from `maraidb` databaes image and it copy the news scritps file to the container to be executed, then expose prot `3306` for that database.
@@ -65,7 +65,7 @@ $ sudo docker push yaseenasaliya/urgentnews-frontend
 ```
 
 
-
+## Running images
 
 
 
