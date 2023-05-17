@@ -1,0 +1,13 @@
+.news-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .news-title {
+    font-weight: bold;
+  }
+  
+  .news-content {
+    margin-top: 10px;
+  }
