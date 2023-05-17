@@ -98,5 +98,63 @@ DB_PORT=3306
 $ sudo docker run -d -p 80:80 -e HOST_IP=<host-ip> --name news-frontend-container yaseenasaliya/urgentnews-frontend
 ```
 
+* Go to following url in your browser to see the result
+```
+http://localhost
+```
+### Running using docekr compose 
+* Install `docker-compose` 
+```
+$ sudo apt install docker-compose
+```
+* create `docker-compose.yml` file 
+```
+version: '3'
+services:
+  mariadb-news-container:
+    image: yaseenasaliya/urgentnews-database
+    ports:
+      - 3306:3306
+    env_file: .env_db
+    container_name: mariadb-news-container
+
+  news-backend-container:
+    image: yaseenasaliya/urgentnews-backend
+    ports:
+      - 5000:5000
+    env_file: .env_backend
+    container_name: news-backend-container
+
+  news-frontend-container:
+    image: yaseenasaliya/urgentnews-frontend
+    ports:
+      - 80:80
+    environment:
+      - HOST_IP=<host-ip>
+    container_name: news-frontend-container
+```
+* Run docker compose file 
+```
+$ sudo docker-compose up -d
+```
+* Go to following url in your browser to see the result
+```
+http://localhost
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
