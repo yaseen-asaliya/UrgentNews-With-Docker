@@ -8,6 +8,4 @@ WORKDIR /app
 COPY *py /app/
 COPY .env /app/
 
-ENV DB_HOST=mariadb-news-container
-
 ENTRYPOINT FLASK_APP=/app/app.py flask run --host=0.0.0.0
