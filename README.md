@@ -66,7 +66,7 @@ $ sudo docker push yaseenasaliya/urgentnews-frontend
 
 
 ## Running images
-### Running using docekr run 
+### Running using `docker run`
 * To run database container, setup `.env_db` file then use the following command:
 ```
 $ sudo docker run -d -p 3306:3306 --env-file .env_db --name mariadb-news-container yaseenasaliya/urgentnews-database
@@ -102,7 +102,7 @@ $ sudo docker run -d -p 80:80 -e HOST_IP=<host-ip> --name news-frontend-containe
 ```
 http://localhost
 ```
-### Running using docekr compose 
+### Running using `docker compose `
 * Install `docker-compose` 
 ```
 $ sudo apt install docker-compose
